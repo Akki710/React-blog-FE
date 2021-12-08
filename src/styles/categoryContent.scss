@@ -1,0 +1,209 @@
+.blog-menu {
+    margin: 7rem 12%;
+    display: flex;
+    // Left Card
+    .blog-card-left {
+        .bollywood-name-hr {
+            width: 5rem;
+            margin-left: 0.8rem;
+            margin-top: 0.5rem;
+            margin-bottom: 5rem;
+            border: 1px solid #ff6600;
+        }
+        .blog-card-item-left {
+            display: flex;
+            gap: 2rem;
+            cursor: pointer;
+            .blog-card-image-div-left {
+                .blog-card-image {
+                    width: 32rem;
+                    height: 19rem;
+                }
+            }
+            .blog-card-text-left {
+                position: relative;
+                .blog-card-title {
+                    font-size: 2.3rem;
+                    font-weight: bold;
+                }
+                .blog-card-para {
+                    margin-top: 1.5rem;
+                    color: #494848;
+                    font-size: 1.6rem;
+                }
+                .blog-card-category {
+                    position: absolute;
+                    bottom: -1rem;
+                    font-size: 1.6rem;
+                }
+                .blog-card-span {
+                    color: #868686;
+                }
+            }
+        }
+        .blog-card-hr {
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+            width: 115%;
+        }
+    }
+    // Right Card
+    .blog-card-right {
+        margin-left: 40%;
+        .bollywood-top-hr {
+            width: 5.7rem;
+            margin-left: -0.2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 5rem;
+            border: 1px solid #ff6600;
+        }
+        .blog-card-item-right {
+            cursor: pointer;
+            .blog-card-item-text-right {
+                display: flex;
+                position: relative;
+                .blog-card-title-right {
+                    width: 130%;
+                    font-size: 2.3rem;
+                    font-weight: bold;
+                    margin-top: 1rem;
+                    margin-bottom: 1.5rem;
+                }
+                .blog-card-category-right {
+                    width: 120%;
+                    margin-bottom: 2rem;
+                    font-size: 1.6rem;
+                }
+                .blog-card-span {
+                    color: #868686;
+                }
+                .blog-number {
+                    position: absolute;
+                    top: 4rem;
+                    right: -14rem;
+                    font-size: 6rem;
+                    color: #b3adad;
+                }
+            }
+        }
+        .blog-card-item-flex-right {
+            display: flex;
+            gap: 1.5rem;       
+        }
+        .blog-card-hr-right {
+            width: 150%;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+        .blog-card-advertisement-right {
+            border: 3px solid #c0c0c0;
+            margin-top: 7rem;
+            height: 58rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+    }
+}
+
+// Responsive
+@media (max-width: 1500px) {
+    .blog-menu {
+        margin: 7rem 12%;
+        // Left card
+        .blog-card-left {
+            .blog-card-item-left {
+                .blog-card-text-left {
+                    .blog-card-title {
+                        width: 80%;
+                    }
+                    .blog-card-category {
+                        bottom: -4.5rem;
+                    }
+                } 
+            }
+            .mobile-top {
+                padding-top: 3.5rem;
+            }
+            .blog-card-hr {
+                width: 100%;
+            }
+        }
+        // Right card
+        .blog-card-right {
+            margin-left: 20%;
+            .blog-card-item-right {
+                .blog-card-item-text-right {
+                    .blog-card-title-right {
+                        width: 80%;
+                    }
+                    .blog-number {
+                        right: -5%;
+                    }
+                }
+            }
+            .blog-card-hr-right {
+                width: 80%;
+            }
+            .blog-card-advertisement-right {
+                height: 58rem;
+                width: 70%;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .blog-menu {
+        gap: 3rem;
+        .blog-card-right {
+            margin-left: 0;
+            margin-top: 5rem;
+            .blog-card-item-text-right {
+                .blog-card-title-right {
+                    width: 100%;
+                }
+                .blog-number {
+                    left: 100%;
+                }
+            }
+            .blog-card-hr-right {
+                width: 100%;
+            }
+        }
+    }
+}
+// Mobile responsive
+@media (max-width: 1000px) {
+    .blog-menu {
+        flex-direction: column;
+        .blog-card-left {
+            .blog-card-item-left {
+                flex-direction: column;
+                .blog-card-image-div-left {
+                    .blog-card-image {
+                        width: 30rem;
+                        height: 20rem;
+                    }
+                }
+                .blog-card-text-left {
+                    .blog-card-para {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .blog-card-right {
+            .blog-card-item-right {
+                display: flex;
+                flex-direction: column;
+            }
+            .blog-card-advertisement-right {
+                display: none;
+            }
+        }
+    }
+}

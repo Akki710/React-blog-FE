@@ -1,0 +1,44 @@
+.home-tech {
+    margin: 6rem 12%;
+    font-size: 1.8rem;
+    .home-tech-head-hr {
+        border: 0.1rem solid orangered;
+        width: 6rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+    .home-cards {
+        display: flex;
+        gap: 3rem;
+        .home-card {
+            cursor: pointer;
+        }
+        .home-tech-image {
+            height: 29rem;
+            width: 35rem;
+        }
+        .home-tech-text {
+            margin: 1.5rem 10%;
+            .home-tech-para {
+                color: #817d7d;
+                margin: 1rem 0;
+            }
+        }
+        .home-tech-date {
+            color: #817d7d;
+        }
+    }
+}
+// Responsive
+@media (max-width: 1220px) {
+    .home-cards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1300px) {
+    .home-tech {
+        margin: 6rem 6%;
+    }
+}

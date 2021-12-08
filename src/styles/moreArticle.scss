@@ -1,0 +1,91 @@
+.blog-feature {
+    background-color: #b3b1b154;
+    .blog-margin {
+        padding: 6rem 12rem;
+        font-size: 1.8rem;
+        .blog-feature-hr {
+            color: #7a7a7a;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+        .feature-cards {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            .card {
+                width: 100%;
+                p {
+                    margin-bottom: 2rem;
+                }
+                .card-image {
+                    height: 29rem;
+                    width: 39rem;
+                    cursor: pointer;
+                }
+                .card-text {
+                    h2 {
+                        margin: 2rem 0;
+                        width: 60%;
+                        font-size: 1.8rem;
+                    }
+                    .card-author {
+                        display: flex;
+                        gap: 2rem;
+                        cursor: default;
+                        .card-author-image {
+                            font-size: 5.5rem;
+                        }
+                        .card-author-text {
+                            font-size: 1.6rem;
+                            .card-author-date {
+                                color: #817d7d;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+@media (max-width: 1150px) {
+    .blog-feature {
+        .blog-margin {
+            .feature-cards {
+                flex-wrap: wrap;
+                .card {
+                    margin: 0 50%;
+                }
+            }
+        }
+    }
+}
+
+// Mobile
+@media (max-width: 800px) {
+    .blog-feature {
+        .blog-margin {
+            .feature-cards {
+                .card {
+                    .related {
+                        display: none;
+                    }
+                    .card-content-wrap {
+                        margin-left: -15rem;
+                        .card-image {
+                            width: 15rem;
+                            height: 15rem;
+                        }
+                        .card-text h2 {
+                            width: 100%;
+                        }
+                        .card-author {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

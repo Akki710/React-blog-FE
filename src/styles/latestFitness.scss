@@ -1,0 +1,65 @@
+.latest-fitness {
+    margin: 6rem 18rem;
+    font-size: 1.8rem;
+    .head-hr {
+        border: 0.1rem solid orangered;
+        width: 5.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 4.5rem;
+    }
+    .row-hr {
+        margin-bottom: 5rem;
+        border: 0.1rem solid #d4c7c7;
+    }
+    .fitness-items {
+        display: flex;
+        justify-content: space-between;
+        .fitness-item {
+            display: flex;
+            .title {
+                margin-bottom: 2rem;
+                cursor: pointer;
+            }
+            .para {
+                margin-bottom: 2rem;
+                color: #817d7d;
+                cursor: pointer;
+            }
+            .date {
+                color: #817d7d;
+            }
+            .vertical-hr {
+                margin: 0 3.5rem;
+                border: 1px solid #d4c7c7;
+            }
+        }
+    }
+    .row-hr2 {
+        margin-top: 5rem;
+        border: 1px solid #d4c7c7;
+    }
+}
+
+// Responsive
+@media (max-width: 1300px) {
+    .latest-fitness {
+        margin: 6rem 6%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .latest-fitness {
+        margin: 6rem 6%;
+    }
+    .fitness-items {
+        flex-wrap: wrap;
+        .fitness-item {
+            .category {
+                margin-bottom: 4rem;
+            }
+            .vertical-hr {
+                display: none;
+            }
+        }
+    }
+}

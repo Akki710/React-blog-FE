@@ -1,0 +1,100 @@
+.food-feature {
+    display: flex;
+    gap: 10rem;
+    margin: 6rem 18rem;
+    font-size: 1.8rem;
+    .food-image {
+        height: 52rem;
+        width: 82rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .bg-text {
+            color: #FFF;
+        }
+    }
+    .delicious-food {
+        margin-top: -25rem;
+        .delicious-food-hr {
+            margin-top: 0.8rem;
+            margin-bottom: 2rem;
+            border: 1px solid orangered;
+            width: 11rem;
+        }
+        .delicious-contents {
+            .top-down {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+            }
+            .sideways {
+                display: flex;
+                gap: 2rem;
+                cursor: pointer;
+            }
+            .delicous-text {
+                display: flex;
+                position: relative;
+                .text {
+                    width: 90%;
+                    .text-head {
+                        margin-top: 1rem;
+                        margin-bottom: 2rem;
+                    }
+                    .text-para {
+                        position: absolute;
+                        bottom: 0;  
+                    }
+                    .date {
+                        color: #817d7d;
+                    }
+                }
+                .number {
+                    color: #817d7d;
+                    font-size: 4.8rem;
+                    width: 10%;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            .food-hr {
+                margin: 2rem;
+                margin-left: -0.2rem;
+            }
+        }
+    }
+}
+// Responsive
+@media (max-width: 1300px) {
+    .food-feature {
+        margin: 6rem 6%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .food-feature {
+        flex-direction: column;
+        margin-top: 30rem;
+        .food-image {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .food-feature {
+        .delicious-food {
+            .delicious-contents {
+                .delicous-text {
+                    .text {
+                        .text-para {
+                            bottom: -2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

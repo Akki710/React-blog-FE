@@ -1,0 +1,117 @@
+.body-margin
+{
+    margin:2% 10%;
+}
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+    margin-inline: 4.2rem;
+}
+.navbar a
+{
+    text-decoration: none;
+    color:black;
+    padding: 8px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.activeuse
+{
+  color: black;
+  padding: 8px;
+}
+.logo
+{
+    margin-left: 35%;
+}
+hr
+{
+    opacity: 0.3;
+    margin-inline: 4.3rem;
+}
+.fa-bars
+{
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    .body-margin
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .main-header
+    {
+        box-shadow: 0px 0px 20px gray;
+        width: 100%;
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        z-index: 5;
+    }
+    .navbar
+    {
+        opacity: 0;
+        display: none;
+        z-index: 100;
+        transition: 1s;
+    }
+    .navbar a
+    {
+        padding: 15px;
+        text-align: center;
+        background-color: white;
+        color: black;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.11);
+    }
+    .act
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 1;
+        animation: slide-down 1s ease-out;
+    }
+    @keyframes slide-down
+        {
+            from { opacity: 0; -webkit-transform: translateX(99%); } 
+            to { opacity: 1; -webkit-transform: translateX(0%); }
+        }
+    .hr-line
+    {
+        display: none;
+    }
+    .fa-bars
+    {
+        display: inline-flex;
+        font-size: 25px;
+        color: gray;
+        margin-top: 16px;
+    }
+    .logo
+    {
+        margin: 0;
+        height: 60px;
+        width: auto;
+        margin-left: -50px;
+    }
+    .header-img
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+@media screen and (min-width : 801px) and (max-width : 1100px){
+
+    .body-margin
+    {
+        margin: 0;
+        padding: 0;
+    }
+}

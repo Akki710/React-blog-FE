@@ -1,0 +1,102 @@
+.latest-hollywood {
+    margin: 6rem 12%;
+    font-size: 1.8rem;
+    .latest-head-hr {
+        border: 0.1rem solid orangered;
+        width: 6rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        .content-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .content-hr {
+            margin-bottom: 3rem;
+            width: 150%;
+        }
+        .content-card {
+            display: flex;
+            gap: 2rem;
+            cursor: pointer;
+            position: relative;
+            .content-img {
+                height: 22rem;
+                width: 22rem;
+            }
+            .content-card-text {
+                .latest-para {
+                    color: #817d7d;
+                    margin: 1rem 0;
+                }
+                .date-cate {
+                    position: absolute;
+                    bottom: 1rem;
+                }
+                .latest-date {
+                    color: #817d7d;
+                }
+            }
+        }
+        .content-ads {
+            border: 0.2rem solid #685d5d;
+            height: 62rem;
+            width: 32rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                font-size: 2.8rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+// Responsive
+@media (max-width: 1500px) {
+    .latest-hollywood {
+        .content {
+            .content-hr {
+                width: 90%;
+            }
+        }
+    }
+}
+// Reduce margin
+@media (max-width: 1300px) {
+    .latest-hollywood {
+        margin: 6rem 6%;
+    }
+}
+// Remove ads
+@media (max-width: 1000px) {
+    .latest-hollywood {
+        .content { 
+            .content-hr {
+                width: 110%;
+            }
+            .content-ads {
+                display: none;
+            }
+        }
+    }
+}
+
+// Para adjustment -> mobile
+@media (max-width: 600px) {
+    .latest-hollywood {
+        .content {
+            .content-card {
+                .content-card-text {
+                    .latest-para {
+                        margin-bottom: 8rem;
+                    }
+                }
+            }
+        }
+    }
+}
